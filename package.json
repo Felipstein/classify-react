@@ -1,5 +1,5 @@
 {
-  "name": "react-classnames",
+  "name": "react-classname",
   "version": "1.0.0",
   "keywords": [
     "react",
@@ -14,7 +14,26 @@
     "tailwind-utils",
     "utils"
   ],
-  "author": "Felipe Oliveira",
+  "homepage": "https://www.npmjs.com/package/react-classname",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Felipstein/react-classname.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Felipstein/react-classname/issues"
+  },
+  "author": {
+    "name": "Felipe Oliveira",
+    "url": "https://github.com/Felipstein",
+    "email": "felipstein.oliveira@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Felipe Oliveira",
+      "url": "https://github.com/Felipstein",
+      "email": "felipstein.oliveira@gmail.com"
+    }
+  ],
   "license": "ISC",
   "private": false,
   "devDependencies": {
