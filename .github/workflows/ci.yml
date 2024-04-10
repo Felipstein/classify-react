@@ -1,4 +1,4 @@
-name: react-classname CI
+name: react-classify CI
 
 on:
   push:

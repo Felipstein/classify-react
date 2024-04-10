@@ -1,5 +1,5 @@
 {
-  "name": "react-classname",
+  "name": "react-classify",
   "version": "1.0.0",
   "main": "dist/buildClassNames.cjs.js",
   "module": "dist/buildClassNames.esm.js",
@@ -43,13 +43,13 @@
     "tailwind-utils",
     "utils"
   ],
-  "homepage": "https://www.npmjs.com/package/react-classname",
+  "homepage": "https://www.npmjs.com/package/react-classify",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Felipstein/react-classname.git"
+    "url": "https://github.com/Felipstein/react-classify.git"
   },
   "bugs": {
-    "url": "https://github.com/Felipstein/react-classname/issues"
+    "url": "https://github.com/Felipstein/react-classify/issues"
   },
   "author": {
     "name": "Felipe Oliveira",
