@@ -1,4 +1,4 @@
-import { buildClassNames } from '.';
+import { buildClassNames } from './buildClassNames';
 
 type Props = {
   className?:
