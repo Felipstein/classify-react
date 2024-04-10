@@ -1,6 +1,12 @@
-export function buildClassNames(
-  propClassName: string | Record<string | number, string> | undefined | null,
-  defaultKey?: string,
+type ClassNameExpected = string | ObjectExpected | undefined | null;
+
+type ObjectExpected = Record<string | number, string | undefined>;
+
+export function buildClassNames<TPropClassName extends ClassNameExpected>(
+  propClassName: TPropClassName,
+  defaultKey?: TPropClassName extends ObjectExpected
+    ? keyof TPropClassName
+    : undefined,
 ) {
   if (isInvalidClassName(propClassName)) {
     throw new TypeError(
@@ -20,13 +26,17 @@ export function buildClassNames(
     return Object.keys(propClassName)[0];
   }
 
-  function getClassName(classNameKey: string) {
+  function getClassName(
+    classNameKey: TPropClassName extends ObjectExpected
+      ? keyof TPropClassName
+      : undefined,
+  ) {
     if (typeof propClassName === 'string' && classNameKey === getDefaultKey()) {
       return propClassName;
     }
 
     return typeof propClassName === 'object'
-      ? propClassName?.[classNameKey] ?? undefined
+      ? propClassName?.[classNameKey as keyof ObjectExpected] ?? undefined
       : undefined;
   }
 
