@@ -1,6 +1,6 @@
 {
   "name": "react-classify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/buildClassNames.cjs.js",
   "module": "dist/buildClassNames.esm.js",
   "types": "dist/buildClassNames.d.ts",
