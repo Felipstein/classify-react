@@ -1,4 +1,4 @@
-name: Build and Publish react-classify to npm
+name: Build and Publish classify-react to npm
 
 on:
   release:
