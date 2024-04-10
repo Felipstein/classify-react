@@ -29,6 +29,7 @@ test('should not throw an error if className is null or undefined and return und
   expect(() => buildClassNames(null)).not.toThrow(TypeError);
 
   const getClassName = buildClassNames(undefined);
+  // @ts-expect-error
   expect(getClassName('root')).toBeUndefined();
 });
 
