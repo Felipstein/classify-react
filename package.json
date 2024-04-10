@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "dist/buildClassNames.cjs.js",
   "module": "dist/buildClassNames.esm.js",
+  "types": "dist/buildClassNames.d.ts",
   "exports": {
     ".": {
       "import": "./dist/buildClassNames.mjs.js",
