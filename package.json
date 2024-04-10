@@ -1,6 +1,19 @@
 {
   "name": "react-classname",
   "version": "1.0.0",
+  "main": "dist/buildClassNames.cjs.js",
+  "module": "dist/buildClassNames.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/buildClassNames.mjs.js",
+      "require": "./dist/buildClassNames.cjs.js"
+    },
+    "./buildClassNames": {
+      "import": "./dist/buildClassNames.mjs.js",
+      "require": "./dist/buildClassNames.cjs.js"
+    }
+  },
+  "type": "module",
   "scripts": {
     "build": "rm -rf dist && rollup -c rollup.config.mjs",
     "test": "jest",
@@ -11,6 +24,11 @@
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm"
   },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "react",
     "classnames",
