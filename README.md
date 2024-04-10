@@ -28,7 +28,7 @@ interface Props {
   className?: string | { root?: string, input?: string }
 }
 
-function Component() {
+function Component({ className }: Props) {
   const getClassName = buildClassNames(className);
 
   return (
